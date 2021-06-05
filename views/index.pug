@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  a(href="/new") Post a new message
+
+  ul
+    each message in messages
+      li
+        p= message.user
+        p= message.text
+        p= message.added

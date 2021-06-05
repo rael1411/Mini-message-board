@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1=title
+    <form method="POST" action="/new">
+        label Name
+        br
+        <input name="user">
+        br
+        label Post
+        br
+        <input name="text">
+        br
+        button(type="submit") Submit
+    </form>
